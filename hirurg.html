@@ -5,53 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рыба Хирург</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 
 <body>
 
     <div class="wrapper">
-        
-        <header> <!-- шапка -->
 
-            <ul class="title">
-                <li class="titleLi">
-                    <h2> <!-- заголовок 2ого уровня -->
-                        <a href="index.html" > Главная</a> 
-                    </h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Главная </a>
                 </li>
-    
-                <li class="titleLi">
-                    <h2>
-                        <a href="catalog.html">Каталог</a> 
-                    </h2>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Каталог</a>
                 </li>
             </ul>
-    
-        </header>
+        </div>
+    </nav>
     
         <main>
             <div class="ribka">
-                <img src="https://www.aqua-shop.ru/images/goods/H8b40.jpg" alt="" class="ribkaImage">
+                <img  src="https://www.aqua-shop.ru/images/goods/H8b40.jpg" alt="" class="ribkaImage">
+
+                <div class="ribkaInfo">
+                    <ul><!-- список -->
+                        <li class="ribkaLi"> 
+                            <b class="ribkaText">Рыба Хирург</b>
+                        </li>
+        
+                        <li class="ribkaLi">
+                            <p class="ribkaText"> <b> Описание: </b>
+                                род морских рыб семейства хирурговых. Встречаются в тропиках Атлантического, Индийского и Тихого океанов. Большинство видов известны из Индо-Тихоокеанской области. Обитают на коралловых рифах.
+                            </p>
+                        </li>
+        
+                        <li class="ribkaLi">
+                            <p class="ribkaText"> <b> Характеристики:</b> Максимальная длина тела от 11 (Acanthurus polyzona) до 70 см (Acanthurus xanthopterus). Известны с раннего эоцена (55 миллионов лет назад). В состав рода включают 40 видов.
+                            </p>
+                        </li>
+        
+                    </ul>
+                </div>
                 
-    
-                <ul><!-- список -->
-                    <li class="ribkaLi"> 
-                        <h1 class="ribkaH"> Рыба Хирург</h1>
-                    </li>
-    
-                    <li>
-                        <p class="ribkaText"> <b> Описание: </b>
-                            род морских рыб семейства хирурговых. Встречаются в тропиках Атлантического, Индийского и Тихого океанов. Большинство видов известны из Индо-Тихоокеанской области. Обитают на коралловых рифах.
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p class="ribkaText"> <b> Характеристики:</b> Максимальная длина тела от 11 (Acanthurus polyzona) до 70 см (Acanthurus xanthopterus). Известны с раннего эоцена (55 миллионов лет назад). В состав рода включают 40 видов.
-                        </p>
-                    </li>
-    
-                </ul>
             </div>
     
         </main>

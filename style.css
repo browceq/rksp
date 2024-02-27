@@ -1,9 +1,5 @@
-header{
-    display: flex;
-    height: 200px;
-    width: 100%;
-    background-color: rgba(67, 114, 230, 0.862);
-    align-items: center;
+html{
+    height: 100%;
 }
 
 body{
@@ -12,20 +8,18 @@ body{
     height: 100%;
 
 }
-html{
-    height: 100%;
+
+main{
+    flex: 1 1 auto; /* Занимать оставшееся доступное пространство */
 }
+
 .wrapper{
     min-height: 100%;
     display: flex;
     flex-direction: column;
+    word-wrap: break-word;
 
 }
-
-main{
-    flex: 1 1 auto;
-}
-
 
 footer{
     text-align: center;
@@ -42,77 +36,29 @@ a{
 /*------*/
 
 
-.title{
+.titleUl{
     text-decoration: none;
-    font-size: 4em;
-    display: flex;
+    font-size: 2em;
     list-style: none;
+    flex-shrink: 2;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 
-.titleLi{
-    margin: 10px;
-}
+
 
 /*------*/
 
-.mainIndex{
-    margin-left: 24px;
-}
+
 
 .description{
     font-size: 32px;
 }
 
-/*------*/
 
-.ribka{
-    display: flex;
-    text-align: left;
-    
-}
-
-.ribkaH{
-    margin-left: 16px;
-    
-}
-
-.ribkaText{
-
-    word-wrap: break-word;
-    margin-left: 16px;
-    font-size: 32px;
-    margin-right: 8px;
-}
-
-
-
-.ribkiList{
-    list-style: none;
-    display: flex;  
-}
-
-
-.ribkiLi{
-    padding-left: 32px;
-}
-
-.ribkiListImage{
-    display: inline-block;
-    width: 800px;
-    height: 600px;
-}
-
-.ribliNames{
-    color: rgb(0, 0, 0);
-    text-align: center;
-}
-
-.ribkaImage{
-    
-    width: 80%;
-    height: 600px;
-}
 
 /* Bootstrap */
 
@@ -121,4 +67,59 @@ a{
     object-fit: cover; /* Заполнение изображения в пределах размеров */
 }
 
+/*------*/
+
+/*------*/
+
+.ribka{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ribkaInfo {
+    flex: 1; 
+}
+
+
+.ribkaText {
+    word-wrap: break-word;
+    font-size: 24px;
+    margin: 0;
+}
+
+
+.ribkiList{
+    list-style: none;
+}
+
+
+.ribkiLi{
+}
+
+.ribkiListImage{
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+}
+
+
+
+.ribkaImage{
+    max-width: 100%;
+    height: auto;
+}
+
+.ribkaLi{
+    margin: 16px;
+}
+
+/* header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(67, 114, 230, 0.862);
+    align-items: center;
+} */
 

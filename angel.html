@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Императорский ангел</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Подключение Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 
@@ -12,23 +14,23 @@
 
     <div class="wrapper">
         
-        <header> <!-- шапка -->
-
-            <ul class="title">
-                <li class="titleLi">
-                    <h2> <!-- заголовок 2ого уровня -->
-                        <a href="index.html" > Главная</a> 
-                    </h2>
-                </li>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
     
-                <li class="titleLi">
-                    <h2>
-                        <a href="catalog.html">Каталог</a> 
-                    </h2>
-                </li>
-            </ul>
-    
-        </header>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Главная </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalog.html">Каталог</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     
         <main>
             <div class="ribka">
