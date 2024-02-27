@@ -1,0 +1,110 @@
+header{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background-color: rgba(67, 114, 230, 0.862);
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+footer{
+    bottom: 0;
+    text-align: center;
+    background-color: gainsboro;
+    position: fixed;
+    width: 100%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+/*------*/
+
+
+.title{
+    text-decoration: none;
+    font-size: 4em;
+    display: flex;
+    list-style: none;
+}
+
+.titleLi{
+    margin: 10px;
+}
+
+/*------*/
+
+.mainIndex{
+    margin-left: 24px;
+}
+
+.description{
+    font-size: 32px;
+}
+
+/*------*/
+
+.ribka{
+    display: flex;
+    text-align: left;
+    
+}
+
+.ribkaH{
+    margin-left: 16px;
+    
+}
+
+.ribkaText{
+
+    word-wrap: break-word;
+    margin-left: 16px;
+    font-size: 32px;
+    margin-right: 8px;
+}
+
+
+
+.ribkiList{
+    list-style: none;
+    display: flex;  
+}
+
+
+.ribkiLi{
+    padding-left: 32px;
+}
+
+.ribkiListImage{
+    display: inline-block;
+    width: 800px;
+    height: 600px;
+}
+
+.ribliNames{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.ribkaImage{
+    
+    width: 80%;
+    height: 600px;
+}
+
+/* Bootstrap */
+
+.card-img-top {
+    height: 400px; /* Установка высоты для всех изображений карточек */
+    object-fit: cover; /* Заполнение изображения в пределах размеров */
+}
+
+
