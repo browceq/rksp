@@ -11,6 +11,7 @@ body{
 
 main{
     flex: 1 1 auto; /* Занимать оставшееся доступное пространство */
+
 }
 
 .wrapper{
@@ -36,7 +37,7 @@ a{
 /*------*/
 
 
-.titleUl{
+.title{
     text-decoration: none;
     font-size: 2em;
     list-style: none;
@@ -44,8 +45,13 @@ a{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 0;
 
+}
+.titleLi {
+    
+    padding: 8px;
 }
 
 
@@ -62,12 +68,28 @@ a{
 
 /* Bootstrap */
 
-.card-img-top {
-    height: 400px; /* Установка высоты для всех изображений карточек */
-    object-fit: cover; /* Заполнение изображения в пределах размеров */
+
+
+.navbar-nav .nav-item.active .nav-link {
+    color: rgb(194, 192, 192);
 }
 
+.navbar-nav .nav-item .nav-link {
+    color: white;
+}
+
+
+.card-img-top{
+    width: 100%;
+    object-fit: contain; /* Подгоняем размер изображения без обрезания */
+
+}
+
+
+
 /*------*/
+
+
 
 /*------*/
 
@@ -115,11 +137,12 @@ a{
     margin: 16px;
 }
 
-/* header{
+header{
     display: flex;
+    justify-content: start;
     height: 200px;
     width: 100%;
     background-color: rgba(67, 114, 230, 0.862);
     align-items: center;
-} */
+} 
 
