@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="margin: 0;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,49 +13,51 @@
 <body>
 
     <div class="wrapper">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Главная </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="catalog.html">Каталог</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Главная </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="catalog.html">Каталог</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
     
         <main>
             <div class="ribka">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Pomocanthus_imperator_facing_right.jpg" alt="" class="ribkaImage">
+                <a href="https://www.aquareef.by/images/product/000/000733/786-pomacanthus-imperator-vzroslyj.jpg" target="_blank">
+                    <img  src="https://www.aquareef.by/images/product/000/000733/786-pomacanthus-imperator-vzroslyj.jpg" alt="" class="ribkaImage">
+                </a>
                 
-    
-                <ul><!-- список -->
-                    <li class="ribkaLi"> 
-                        <h1 class="ribkaH">Императорский ангел</h1>
-                    </li>
-    
-                    <li>
-                        <p class="ribkaText"> <b> Описание: </b>
-                            Императорский ангел, или императорский помакант, или ангел-император (лат. Pomacanthus imperator) — морская лучепёрая рыба из семейства рыб-ангелов (Pomacanthidae).
-    
-    
-                        </p>
-                    </li>
-    
-                    <li>
-                        <p class="ribkaText"> <b> Характеристики:</b> Длина тела до 40 см. В спинном плавнике 13—14 жёстких и 17—21 мягких лучей, в анальном 3 жёстких и 18—21 мягких. Окраска боков синяя или голубая с близкорасположенными узкими горизонтальными и диагональными жёлтыми полосами, заходящими на спинной и анальный плавники, передняя часть головы белая, через глаза проходит дугообразная чёрная с пурпурным оттенком и синими краями полоса, такого же цвета вертикально вытянутое пятно расположено над грудными плавниками. Передняя часть спины зелёная, верхний край спинного плавника и хвостовой плавник жёлто-оранжевые, брюшные и анальный плавники синие с продольными коричневыми полосами. Молодые рыбы сине-чёрные с концентрическими белыми и голубыми кругами. Взрослую окраску приобретает по достижении длины 8—12 см.
-                        </p>
-                    </li>
-    
-                </ul>
+
+                <div class="ribkaInfo">
+                    <ul><!-- список -->
+                        <li class="ribkaLi"> 
+                            <b class="ribkaText">Императорский ангел</b>
+                        </li>
+        
+                        <li class="ribkaLi">
+                            <p class="ribkaText"> <b> Описание: </b>
+                                Императорский ангел, или императорский помакант, или ангел-император (лат. Pomacanthus imperator) — морская лучепёрая рыба из семейства рыб-ангелов (Pomacanthidae).
+                            </p>
+                        </li>
+        
+                        <li class="ribkaLi">
+                            <p class="ribkaText"> <b> Характеристики:</b> Длина тела до 40 см. В спинном плавнике 13—14 жёстких и 17—21 мягких лучей, в анальном 3 жёстких и 18—21 мягких. Окраска боков синяя или голубая с близкорасположенными узкими горизонтальными и диагональными жёлтыми полосами, заходящими на спинной и анальный плавники, передняя часть головы белая, через глаза проходит дугообразная чёрная с пурпурным оттенком и синими краями полоса, такого же цвета вертикально вытянутое пятно расположено над грудными плавниками. Передняя часть спины зелёная, верхний край спинного плавника и хвостовой плавник жёлто-оранжевые, брюшные и анальный плавники синие с продольными коричневыми полосами. Молодые рыбы сине-чёрные с концентрическими белыми и голубыми кругами. Взрослую окраску приобретает по достижении длины 8—12 см.
+                        </li>
+        
+                    </ul>
+                </div>
+                
             </div>
     
         </main>
@@ -63,9 +65,12 @@
         <footer> <!-- подвал -->
             <p>Copyright &copy; "Все права защищены"</p>
         </footer>
+        <!-- Подключение Bootstrap JS (необходим для работы навбара) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
 
     </div>
-    
 
 </body>
 
