@@ -15,19 +15,58 @@
 
         <header> <!-- шапка -->
 
-            <ul class="title">
-                <li class="titleLi">
-                    <h2 > <!-- заголовок 2ого уровня -->
-                        <a href="index.html"> Главная</a> 
-                    </h2>
-                </li>
+            <div>
+                <ul class="title">
+
+                    <li class="titleLi">
+                        <h2 > <!-- заголовок 2ого уровня -->
+                            <a href="index.html" class="titleText"> Главная</a> 
+                        </h2>
+                    </li>
+        
+                    <li class="titleLi">
+                        <h2 >
+                            <a href="catalog.html" class="titleText">Наши рыбы</a> 
+                        </h2>
+                    </li>
     
-                <li class="titleLi">
-                    <h2>
-                        <a href="catalog.html">Каталог</a> 
-                    </h2>
-                </li>
-            </ul>
+                    <li class="titleLi">
+                        <button type="button" class="btn btn-custom " data-bs-toggle="modal" data-bs-target="#registrationModal">
+                        <span class="title">Аккаунт</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+
+        <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="registrationModalLabel">Форма регистрации</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label for="username" class="form-label">Имя пользователя</label>
+                    <input type="text" class="form-control" id="username" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Электронная почта</label>
+                    <input type="email" class="form-control" id="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Пароль</label>
+                    <input type="password" class="form-control" id="password" required>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+                
     
         </header>
 
@@ -37,6 +76,7 @@
             <h1>
                 Добро пожаловать в Москвариум – Красное море!
             </h1>
+            <img src="images/MainPhoto.jpg" alt="MainPhoto" class="mainPhoto">
             <p class="description">Москвариум на ВДНХ – одна из главных достопримечательностей Москвы – ежегодно входит в число самых популярных мест для семейного отдыха как среди москвичей, так и гостей нашей столицы. Это настоящий тематический парк, в котором можно погрузиться в тему мирового океана со всевозможных сторон.</p>
             <p>This text is additional</p>
             <p>This text is additional</p>
@@ -68,8 +108,8 @@
         <!-- Подключение Bootstrap JS (необходим для работы навбара) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
 
 
 

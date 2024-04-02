@@ -11,32 +11,72 @@
 
 <body>
 
-    <div class="d-flex flex-column vh-100">
-        <nav class="navbar navbar-expand-lg bg-primary"> <!-- navbar  -->
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler">
-    
-                <span class="navbar-toggler-icon"></span>
-    
-            </button>
-    
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    
-                <ul class="navbar-nav mr-auto">
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Главная</a>
-                    </li>
-    
-                    <li class="nav-item active">
-                        <a class="nav-link" href="catalog.html">Наши Рыбы</a>
-                    </li>
-    
-                </ul>
-    
-            </div>
-    
-        </nav>
+    <div class="d-flex flex-column vh-100">
+        <div>
+            <nav class="navbar navbar-expand-lg bg-primary"> <!-- navbar  -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler">
+        
+                    <span class="navbar-toggler-icon"></span>
+        
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        
+                    <ul class="navbar-nav mr-auto align-items-center">
+        
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Главная</a>
+                        </li>
+        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="catalog.html">Наши Рыбы</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#registrationModal">
+                                <span class="nav-link">Аккаунт</span>
+                            </button>
+                        </li>
+
+                    </ul>
+        
+                </div>
+        
+            </nav>
+
+            <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="registrationModalLabel">Форма регистрации</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="username" class="form-label">Имя пользователя</label>
+                          <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Электронная почта</label>
+                          <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="password" class="form-label">Пароль</label>
+                          <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+        
     
         <main>
             <div class="container mt-4"> <!-- mt - отступ -->
@@ -49,7 +89,7 @@
 
                             <a href="hirurg.html" class="text-decoration-none text-dark">
          
-                                 <img src="Hirurg.jpg" class="card-img-top" alt="Рыба Хирург">
+                                 <img src="images/Hirurg.jpg" class="card-img-top" alt="Рыба Хирург">
          
                                  <div class="card-body">
                                      <h3 class="card-title text-center">Рыба Хирург</h3>
@@ -66,7 +106,7 @@
                         <div class="card h-100 mb-4">
                             <a href="angel.html" class="text-decoration-none text-dark">
          
-                                 <img src="Angel.jpg" class="card-img-top" alt="Императорский ангел">
+                                 <img src="images/Angel.jpg" class="card-img-top" alt="Императорский ангел">
          
                                  <div class="card-body">
                                      <h3 class="card-title text-center">Императорский ангел</h3>

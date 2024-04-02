@@ -1,160 +1,190 @@
-html{
-    height: 100%;
-}
+    html{
+        height: 100%;
+    }
 
-body{
-    margin: 0;
-    overflow-x: hidden;
-    height: 100%;
+    body{
+        margin: 0;
+        overflow-x: hidden;
+        height: 100%;
 
-}
+    }
 
-main{
-    flex: 1 1 auto; /* Занимать оставшееся доступное пространство */
+    main{
+        flex: 1 1 auto; /* main занимает оставшееся доступное пространство */
 
-}
+    }
 
-.wrapper{
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
+    .wrapper{
+        min-height: 100%;
+        display: flex;
+        flex-direction: column;
+        word-wrap: break-word;
 
-}
+    }
 
-footer{
-    text-align: center;
-    background-color: gainsboro;
-    
-}
+    footer{
+        text-align: center;
+        background-color: gainsboro;
+        
+    }
 
-a{
-    color: white;
-    text-decoration: none;
-    
-}
+    a{
+        color: white;
+        text-decoration: none;
+        
+    }
 
-.mainIndex{
-    margin: 24px;
-}
-/*------*/
-
-
-.title {
-    text-decoration: none;
-    font-size: 2em;
-    list-style: none;
-    flex-shrink: 2;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; /* Добавляем перенос строк */
-    justify-content: space-between;
-    margin: 0;
-    padding: 16px;
-}
-.titleLi {
-    padding: 8px;
-  
-}
+    .mainIndex{
+        margin: 24px;
+    }
+    /*------*/
 
 
+    .title {
+        text-decoration: none;
+        list-style: none;
+        flex-shrink: 2;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        margin: 0;
+        padding: 16px;
+    }
+    .titleLi {
+        padding: 8px;
+    }
+    .titleText{
+        word-wrap: break-word;
+    }
+    .title{
+        word-wrap: break-word;
+        color: white;
+        font-size: 1.5em;
+        font-weight: bold;
+        align-items: center;
+    }
 
+    .btn-custom {
 
-
-
-/*------*/
-
-
-
-.description{
-    font-size: 32px;
-}
-
-
-
-/* Bootstrap */
+        align-items: center;
+        padding: 0;
+    }
 
 
 
-.navbar-nav .nav-item.active .nav-link {
-    color: rgb(194, 192, 192);
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: white;
-}
-
-
-.card-img-top{
-    width: 100%;
-    object-fit: contain; /* Подгоняем размер изображения без обрезания */
-
-}
-
-.navbar-collapse {
-    padding: 16px;
-}
+    .mainPhoto{
+        width: 100%;
+        object-fit: cover;
+        margin: 8px 0 8px 0; /* сверху по-часовой */
+        border-radius: 8px;
+    }
 
 
 
-/*------*/
 
 
 
-/*------*/
-
-.ribka{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.ribkaInfo {
-    flex: 1; 
-}
-
-
-.ribkaText {
-    word-wrap: break-word;
-    font-size: 24px;
-    margin: 0;
-}
-
-
-.ribkiList{
-    list-style: none;
-}
-
-
-.ribkiLi{
-}
-
-.ribkiListImage{
-    display: inline-block;
-    width: 800px;
-    height: 600px;
-}
+    /*------*/
 
 
 
-.ribkaImage{
-    max-width: 100%;
-    height: auto;
-}
+    .description{
+        font-size: 32px;
+    }
 
-.ribkaLi{
-    margin: 16px;
-}
 
-header{
-    display: flex;
-    justify-content: start;
-    height: 200px;
-    width: 100%;
-    background-color: rgba(67, 114, 230, 0.862);
-    align-items: center;
-    flex-wrap: wrap;
-    
-} 
+
+    /* Bootstrap */
+
+
+
+    .navbar-nav .nav-item.active .nav-link {
+        color: rgb(194, 192, 192);
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        color: white;
+    }
+
+
+    .card-img-top{
+        width: 100%;
+        object-fit: contain; /* Подгоняем размер изображения без обрезания */
+
+    }
+
+    .navbar-collapse {
+        padding: 16px;
+    }
+
+    .navbar-nav .nav-item:hover .nav-link {
+        background-color: rgba(255,255,255,0.1); /* Цвет фона при наведении */
+        border-radius: 5px; /* Округление углов */
+    }
+
+    /*------*/
+
+
+
+    /*------*/
+
+    .ribka{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .ribkaInfo {
+        flex: 1; 
+    }
+
+
+    .ribkaText {
+        word-wrap: break-word;
+        font-size: 24px;
+        margin: 0;
+    }
+
+
+    .ribkiList{
+        list-style: none;
+    }
+
+
+    .ribkiLi{
+    }
+
+    .ribkiListImage{
+        display: inline-block;
+        width: 800px;
+        height: 600px;
+    }
+
+
+
+    .ribkaImage{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .ribkaLi{
+        margin: 16px;
+    }
+
+    header{
+        display: flex;
+        justify-content: start;
+        height: 200px;
+        width: 100%;
+        background-color: #235ad1;
+        align-items: center;
+        flex-wrap: wrap;
+
+        min-height: auto;
+        flex-grow: 1;
+        
+    } 
 
